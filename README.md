@@ -4,7 +4,7 @@ This is a simple weather application built with **React** and **Bootstrap CSS**.
 
 ## 🔗 Demo
 
-👉 [Live Demo](https://your-demo-link-here.com)
+👉 [Live Demo]([(https://spectacular-bonbon-f6e8b2.netlify.app/)])
 
 ---
 
@@ -26,6 +26,8 @@ This is a simple weather application built with **React** and **Bootstrap CSS**.
 - Axios (for API calls)
 
 ---
+
+![iPhone-13-PRO-spectacular-bonbon-f6e8b2 netlify app](https://github.com/user-attachments/assets/ab372f73-8185-4342-9533-364041bb86fc)
 
 
 # Getting Started with Create React App
