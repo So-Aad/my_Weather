@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
-import './Weather.css'; // Ton fichier CSS personnalisé
+import './Weather.css'; // We'll create this CSS file
 
 export default function Weather() {
     const [Search, setSearch] = useState("");
@@ -24,7 +24,7 @@ export default function Weather() {
         }
     };
 
-    const getWeatherData = useCallback(async (city) => {
+    const getWeatherData = async (city) => {
         setLoading(true);
         setError(null);
         try {
@@ -43,16 +43,16 @@ export default function Weather() {
         } finally {
             setLoading(false);
         }
-    }, []);
+    };
 
-    useEffect(() => {
-        if (Search) {
-            const timer = setTimeout(() => {
-                getWeatherData(Search);
-            }, 1000);
-            return () => clearTimeout(timer);
-        }
-    }, [Search, getWeatherData]);
+    // useEffect(() => {
+    //     if (Search) {
+    //         const timer = setTimeout(() => {
+    //             getWeatherData(Search);
+    //         }, 1000);
+    //         return () => clearTimeout(timer);
+    //     }
+    // }, [Search]);
 
     const getWeatherBackground = () => {
         if (!weatherData) return 'default-bg';
