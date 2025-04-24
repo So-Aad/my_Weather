@@ -1,0 +1,179 @@
+/* WeatherApp.css */
+
+/* Base Styles */
+.weather-app {
+    min-height: 100vh;
+    padding: 2rem 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.3s ease;
+}
+
+.app-title {
+    font-weight: 700;
+    color: #2c3e50;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.weather-card {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border: none;
+}
+
+.search-input {
+    border-radius: 50px 0 0 50px !important;
+    padding: 12px 20px;
+    border: none;
+    box-shadow: none !important;
+    font-size: 1.1rem;
+}
+
+.search-btn {
+    border-radius: 0 50px 50px 0 !important;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    border: none;
+    font-size: 1.1rem;
+}
+
+.search-btn:hover {
+    background: linear-gradient(135deg, #5d7de8, #9666d8);
+}
+
+/* Weather Info Styles */
+.city-name {
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.date {
+    color: #7f8c8d;
+    font-size: 1rem;
+}
+
+.temperature-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.temperature {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #2c3e50;
+    line-height: 1;
+}
+
+.weather-range {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.high {
+    color: #e74c3c;
+    font-weight: 600;
+}
+
+.low {
+    color: #3498db;
+    font-weight: 600;
+}
+
+.weather-description {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-top: -10px;
+}
+
+/* Detail Cards */
+.detail-card {
+    background: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.detail-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.detail-card i {
+    font-size: 1.5rem;
+    color: #6e8efb;
+    margin-bottom: 0.5rem;
+}
+
+.detail-card p {
+    margin-bottom: 0.2rem;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+.detail-card h4 {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0;
+}
+
+/* Background Themes */
+.default-bg {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.clear-bg {
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+}
+
+.cloud-bg {
+    background: linear-gradient(135deg, #e0e0e0 0%, #bdbdbd 100%);
+}
+
+.rain-bg {
+    background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%);
+    color: white;
+}
+
+.rain-bg .weather-card,
+.rain-bg .detail-card {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.snow-bg {
+    background: linear-gradient(135deg, #e6e9f0 0%, #eef1f5 100%);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .app-title {
+        font-size: 2rem;
+    }
+    
+    .temperature {
+        font-size: 3rem;
+    }
+    
+    .weather-main {
+        flex-direction: column;
+    }
+    
+    .weather-icon {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .weather-card {
+        padding: 1.5rem;
+    }
+    
+    .app-title {
+        font-size: 1.8rem;
+    }
+    
+    .search-input, .search-btn {
+        padding: 10px 15px;
+    }
+}
