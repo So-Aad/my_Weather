@@ -4,7 +4,7 @@ This is a simple weather application built with **React** and **Bootstrap CSS**.
 
 ## 🔗 Demo
 
-👉 [Live Demo]([https://spectacular-bonbon-f6e8b2.netlify.app/])
+👉 [Live Demo](https://spectacular-bonbon-f6e8b2.netlify.app/)
 
 ---
 
