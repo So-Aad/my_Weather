@@ -9,7 +9,7 @@ export default function Weather() {
     const [error, setError] = useState(null);
 
     const api = {
-        key: '3a642d891c2fb46f35303100e3857d97',
+        key: '',
         theUrl: "https://api.openweathermap.org/data/2.5/"
     };
 
