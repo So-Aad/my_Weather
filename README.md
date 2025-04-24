@@ -1,3 +1,33 @@
+# 🌤️ React Weather App
+
+This is a simple weather application built with **React** and **Bootstrap CSS**. It fetches current weather data from the [OpenWeatherMap API](https://openweathermap.org/api) based on user input (city name).
+
+## 🔗 Demo
+
+👉 [Live Demo](https://your-demo-link-here.com)
+
+---
+
+## 🚀 Features
+
+- Real-time weather data
+- Search by city name
+- Temperature in Celsius
+- Weather description and icon
+- Fully responsive UI using Bootstrap CSS
+
+---
+
+## 🛠️ Tech Stack
+
+- React
+- Bootstrap CSS
+- OpenWeatherMap API
+- Axios (for API calls)
+
+---
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
